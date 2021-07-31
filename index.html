@@ -1,39 +1,128 @@
 <style>
+    .body_class {
+        display: flex;
+        flex-direction: column;
+        border: 5px solid blue; 
+        justify-content: space-between;
+    }
+    .topbar {
+        display: flex;
+        height: auto;
+        border: 5px solid   rgb(255, 238, 0);
+        justify-content: flex-end;
+    }
+    .topbar div {
+        margin: 10px;
+    }
+    .midpart {
+        display: flex;
+        flex-direction: column;
+        border: 5px solid green
+        
+    }
+    .google_icon_div {
+        display: flex;
+        justify-content: center;
+        border: 5px solid yellow;
+    }
 
-.search-button {
-    color: rgb(60, 64 , 67); 
-    width: 200px; 
-    height: 30px; 
-}
-.feel-button {
-    color: rgb(60, 64 , 67); 
-    width: 100px; 
-    height: 30px;
-}
-.google-icon {
-display: block;
-margin: auto;
-position: relative;
-top: 100px;
-}
-</style>
+    .topnav { 
+    display: flex;
+    justify-content: center;
+    border: 5px solid orange;
+    margin: 1em;
+    }
+    .topnav input {
+    width: 60%;
+    height: 40px;
+    }
+    .twobuttons {
+        display: flex;
+        justify-content: center;
+        border: 5px solid purple;
+        margin: 10px;
+    }
+    .search-button {
+        color: rgb(60, 64 , 67); 
+        width: 200px; 
+        height: 30px; 
+        margin: 10px;
+       
+    
+    }
+    .feel-button {
+        color: rgb(60, 64 , 67); 
+        width: 150px; 
+        height: 30px;
+        margin: 10px;   
+    }
 
+    .botbarleft {
+        display: flex;
+        border: 5px solid darkmagenta;
+    }
 
+    .botbarright {
+        display: flex;
+        border: 5px solid rgb(37, 190, 196);
+        
+    }
+    .footer_class {
+        display: flex;
+        flex-direction: row;
+        justify-self:end;
+        justify-content: space-between; 
+        border: 5px solid rgb(231, 12, 184);
+    }
+    .footer_class div {
+        display: flex;
+        flex-direction: row;
+        margin: 10px;
+    }
+
+    </style>
 
 <!DOCTYPE html>
 <html>
+<body class="body_class">
+<header>
+    <div class="topbar">
+        <div>Gmail</div>
+        <div><a href="#">Images</a></div>
+        <div><img class="nine-dots" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo5jRlx2VBCksm6PelEjC7ugVBZMUwijtoo9ndNvWobNyILx6_&usqp=CAU" alt="9 dots options"></div>
+    </div>
+
+</header>
 
 
-<body>
-    <img class="google-icon" src="https://www.google.com/logos/doodles/2021/peru-national-day-2021-6753651837109006-law.gif" alt="">
-    <div class = topnav>
+<div class="midpart">
+    <div class="google_icon_div">
+        <img class="google-icon" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="">
+    </div>
+    <div class ="topnav">
         <input type="text" placeholder="Search">
     </div>
-    <button class="search-button">Search with Google style</button>
-    <button class="feel-button">I feel lucky</button>
-    
-</body>
+    <div class="twobuttons">
+        <button class="search-button">Search with Google style</button>
+        <button class="feel-button">I feel lucky</button>
+    </div>
+</div>
+<footer class="footer_class">
+    <div class="botbarleft">
+        <div><a href="#">term 1</a></div>
+        <div><a href="#">term 2</a></div>
+        <div><a href="#">term 3</a></div>
+    </div>
+    <div class="botbarright">
+        <div><a href="#">term 4</a></div>
+        <div><a href="#">term 5</a></div>
+        <div><a href="#">term 6</a></div>
+        <div><a href="#">term 7</a></div>
+    </div>
 
+</footer>
+
+</body>
 
 
 </html>
